@@ -3,33 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="s.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Tuq Tic Tac Toe Challenge</title>
   </head>
   <body>
     <main class="wrapper">
       <section class="controls">
-        <label>Player Name</label>
-        <input
-          id="PlayerNameInput"
-          type="text"
-          placeholder="You"
-          maxlength="18"
-        />
         <label>Difficulty</label>
         <select id="DifficultySelect">
           <option value="easy">Easy</option>
           <option value="medium" selected>Medium</option>
           <option value="hard">Hard</option>
         </select>
+
         <div class="buttons">
-          <button>Start</button>
-          <button>Restart</button>
+          <button id="StartButton" type="button">Start</button>
+          <button id="RestartButton" type="button">Restart</button>
         </div>
+
         <p id="StatusText" class="Status">Click Start.</p>
       </section>
+
       <section class="Board" id="Board"></section>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
