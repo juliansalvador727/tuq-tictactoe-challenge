@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+  display: flex;
+  justify-content: center;
+}
+
+.Wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+  width: 100%;
+}
+
+.Controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 6px 8px;
+}
+
+.Buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.Status {
+  margin: 4px 0 0;
+}
+
+.Board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: 300px;
+}
+
+.Square {
+  width: 90px;
+  height: 90px;
+
+  border: 1px solid #111;
+  background: transparent;
+
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.Square:disabled {
+  cursor: not-allowed;
+}
