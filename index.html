@@ -7,7 +7,29 @@
     <title>Tuq Tic Tac Toe Challenge</title>
   </head>
   <body>
-    <p>hi</p>
+    <main class="wrapper">
+      <section class="controls">
+        <label>Player Name</label>
+        <input
+          id="PlayerNameInput"
+          type="text"
+          placeholder="You"
+          maxlength="18"
+        />
+        <label>Difficulty</label>
+        <select id="DifficultySelect">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <div class="buttons">
+          <button>Start</button>
+          <button>Restart</button>
+        </div>
+        <p id="StatusText" class="Status">Click Start.</p>
+      </section>
+      <section class="Board" id="Board"></section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
